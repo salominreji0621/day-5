@@ -1,0 +1,22 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() 
+{
+    int a,b;
+    scanf("%d %d",&a,&b);
+    int m=(a>=b)?a:b;
+    while (1)
+    {
+        if(m%a==0 && m%b==0)
+        {
+            printf("%d",m);
+            break;
+        }
+        m++;
+    }
+
+    return 0;
+}
